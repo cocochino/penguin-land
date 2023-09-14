@@ -15,9 +15,9 @@ from selenium import webdriver
 
 driver = webdriver.Firefox()
 
-driver.get('file:///C:/Users/Miho/eclipse-workspace/Ex_Files_Python_Automation_Testing_Upd/Exercise%20Files/CH02/html_code_02.html')
+driver.get('file://C:/WebDriver/test_files/form_sample.html')
 
-login_form = driver.find_element_by_id('loginForm')
-print("My login form element is: ", login_form)
+elm = driver.find_element_by_id('submitnForm')
+print("Web element is: ", elm)
 
 driver.close()

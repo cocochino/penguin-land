@@ -15,17 +15,18 @@ from selenium.webdriver.support.ui import Select
 
 driver = webdriver.Firefox()
 
-driver.get('file:///C:/Users/Miho/eclipse-workspace/Ex_Files_Python_Automation_Testing_Upd/Exercise%20Files/CH03/03_02/html_code_03_02.html')
+driver.get('file://C:/WebDriver/test_files/dropdown.html')
 
-select = Select(driver.find_element_by_name('numReturnSelect'))
+select = Select(driver.find_element_by_name('townsSelect'))
 
-select.select_by_index(4)
+select.select_by_index(4)#Amherst... index starts from 0
+
 time.sleep(2)
 
-select.select_by_visible_text('200')
+select.select_by_visible_text('Cambridge')
 time.sleep(2)
 
-select.select_by_value('250')
+select.select_by_value('5') #Weymouth
 time.sleep(2)
 
 options = select.options
