@@ -1,0 +1,92 @@
+{
+	"id": "075cd74c-fa75-49f6-971d-79231426fd1a",
+	"name": "Contact List",
+	"values": [
+		{
+			"key": "firstName",
+			"value": "Test-F",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "lastName",
+			"value": "Test-L",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "contactID",
+			"value": "65009e3d915f95001331e409",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTAwN2M1ODkxNWY5NTAwMTMzMWUzYjYiLCJpYXQiOjE2OTQ1Mzk4Mjh9.mF2E3wcAkL5xa7YTyW6xE29Cg1sqdbgEu4C5gCpLB8A",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "ikoID",
+			"value": "650098d6915f95001331e405",
+			"enabled": true
+		},
+		{
+			"key": "state",
+			"value": "MA",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "emailExt",
+			"value": "@cat.com",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "bday",
+			"value": "2020-07-07",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "phone",
+			"value": "1234567890",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "zip",
+			"value": "012345",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "town",
+			"value": "Catville",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "country",
+			"value": "USA",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "street",
+			"value": "234 Cat St.",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "apt",
+			"value": "Apartment Cat",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2023-09-14T18:26:31.152Z",
+	"_postman_exported_using": "Postman/10.17.7"
+}
