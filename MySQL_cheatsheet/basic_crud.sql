@@ -47,6 +47,9 @@ DELETE from test where b = 'another';
 
 # DROPping table
 DROP TABLE test;
+# or
+DROP TABLE IF EXISTS test;
+
 
 #
 # Basic JOIN
