@@ -1,6 +1,9 @@
-#
-# Math functions
-# from LinkedIn.com/Learn
+/* 
+Standard comment uses '--' followed by a space
+Also MySQL supports C style comment / *  * / and #
+Math functions
+from LinkedIn.com/Learn
+*/
 
 SELECT ABS(-11.55); # Anwwer is 11.55
 
@@ -14,7 +17,7 @@ SELECT truncate(13.789, 1); # Answer is 13.7
 SELECT truncate(13.789, 2); # Answer is 13.78
 SELECT truncate(13.789, -1); # Answer is 10, because negative number indicate the lest side 13 -> 10
 
-# Use pi and decimal numbers to control the output
+-- Use pi and decimal numbers to control the output
 SELECT pi(); # '3.141593'
 SELECT pi() + 0.0000000000; # 3.1415926536
 
