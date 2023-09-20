@@ -16,11 +16,4 @@ class sanityCheck():
         
         #self.assertEqual("Mooshu", "Mooshu")
         driver.close()
-        '''def test_1(self):
-        driver= webdriver.Firefox();
-        
-        driver.get('http://www.google.com');
-        
-        #self.assertEqual("Mooshu", "Mooshu")
-        driver.close()
-    '''
+
