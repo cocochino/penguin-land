@@ -10,10 +10,10 @@ from selenium import webdriver;
 
 class sanityCheck():
     
-        driver= webdriver.Firefox();
+    driver= webdriver.Firefox()
         
-        driver.get('http://www.google.com');
+    driver.get('http://www.google.com')
         
-        #self.assertEqual("Mooshu", "Mooshu")
-        driver.close()
+    #self.assertEqual("Mooshu", "Mooshu")
+    driver.close()
 
