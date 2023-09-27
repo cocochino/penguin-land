@@ -9,17 +9,16 @@ It will iterate all the dropdown option list item in the html file.
 Run this as PyUnit
 '''
 
-from selenium import webdriver;
+from selenium import webdriver
 from selenium.webdriver.support.select import Select
 from unittest import TestCase
-
-import csv
-
+#import csv
+#
 class selectAndVerifyDropdownLoop(TestCase):
     
     def setUp(self):
-        self.driver= webdriver.Firefox();
-        self.driver.get('file://C:/WebDriver/test_files/dropdown.html');
+        self.driver= webdriver.Firefox()
+        self.driver.get('file://C:/WebDriver/test_files/dropdown.html')
         self.driver.implicitly_wait(5)
 
         
