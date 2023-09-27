@@ -7,16 +7,15 @@ This file uses selenium.webdriver.support.select to work with dropdown.
 It will obtain currently selected item from the dropdown and compare it with expected value.
 Run this as PyUnit
 '''
-from selenium import webdriver;
-#from selenium.webdriver.support.ui import Select
+from selenium import webdriver
 from selenium.webdriver.support.select import Select
 from unittest import TestCase
 
 class selectAndVerifyDropdown(TestCase):
     
     def setUp(self):
-        self.driver= webdriver.Firefox();
-        self.driver.get('file://C:/WebDriver/test_files/dropdown.html');
+        self.driver= webdriver.Firefox()
+        self.driver.get('file://C:/WebDriver/test_files/dropdown.html')
         self.driver.implicitly_wait(5)
         
     def test_one(self):
