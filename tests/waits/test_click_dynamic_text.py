@@ -5,12 +5,12 @@ Created on Sep 26, 2023
 
 WebDriver waits for page load but not for CSS animation or JavaScript load.
 This test case wait for up to 4 seconds until dynamic text div becomes clickable.
+This utilize web element's size to compare before and after clicking the dynamic panel.
 Returns timeout exception.
 '''
 from selenium import webdriver;
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-#from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support import expected_conditions as EC
 from unittest import TestCase
 
@@ -23,7 +23,17 @@ class clickDynamicText(TestCase):
     def test_one(self):
         self.driver.get('https://eviltester.github.io/synchole/collapseable.html')
         section = self.driver.find_element_by_css_selector("section.condense") 
+        
+        ''' How to use size of an element as a new test condition '''
+        size = section.size
+        bw, bh = size['width'], size['height']
+        
         section.click()
+        size = section.size
+        aw, ah = size['width'], size['height']
+        
+        self.assertTrue(ah>bh, 'Panel not expended')
+            
         
         '''Below is the original line... harder to read
         element = WebDriverWait(self.driver, 4).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a#aboutlink")))
