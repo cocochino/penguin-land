@@ -30,6 +30,15 @@ class waitForSlowJSPage(TestCase):
         )
         page_status = self.driver.execute_script("return (window.totalMessagesReceived>0 && window.renderingQueueCount==0)")
         self.assertTrue(page_status,'JavaScript has not been completed.')
+        
+        '''  Working with dynamic condition of request traffic'''
+        total_sent = self.driver.execute_script("return window.totalRequestsMade")
+        total_received = self.driver.execute_script("return window.totalMessagesReceived")
+        total_display = self.driver.execute_script("return window.allMessages.length")
+        #print(total_sent)
+        #print(total_received)
+        #print(total_display)
+        self.assertEquals(total_display, (total_sent*2 + total_received), 'Displayed message count is not matching.')        
 
     def tearDown(self):
         self.driver.close()
