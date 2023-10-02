@@ -4,7 +4,7 @@ Created on Oct 2, 2023
 @author: Miho
 
 Use try-except to check condition of the dynamic buttons and timeout.
-Rather than timeout exception, this marks test case as fail if the button isn't unabled.
+Rather than timeout exception, this marks test case as fail if the button won't be activated.
 '''
 
 from selenium import webdriver;
@@ -38,7 +38,8 @@ class waitForSlowButtons(TestCase):
             element.click()
         except:
             print(f"The button {name} didn't become active within {timeout} seconds.")
-            self.fail("Aborting the test case.")         
+            ''' To mark test as pass, use self.skipTest(reason) '''
+            self.fail("Aborting the test case.")        
 
     def tearDown(self):
         self.driver.close()
