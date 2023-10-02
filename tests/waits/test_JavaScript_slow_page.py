@@ -12,7 +12,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from unittest import TestCase
 
-class waitForSlowJSPage(TestCase):
+class waitForSlowPageLoad(TestCase):
     
     def setUp(self):
         self.driver= webdriver.Firefox()
@@ -35,9 +35,9 @@ class waitForSlowJSPage(TestCase):
         total_sent = self.driver.execute_script("return window.totalRequestsMade")
         total_received = self.driver.execute_script("return window.totalMessagesReceived")
         total_display = self.driver.execute_script("return window.allMessages.length")
-        #print(total_sent)
-        #print(total_received)
-        #print(total_display)
+        print("Total message sent: ", total_sent)
+        print("Total message received: ", total_received)
+        print("Total message displayed: ", total_display)
         self.assertEquals(total_display, (total_sent*2 + total_received), 'Displayed message count is not matching.')        
 
     def tearDown(self):
