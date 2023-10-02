@@ -16,5 +16,4 @@ driver.get("http://www.python.org")
 
 myelem = driver.find_element_by_id('start-shell')
 
-
 driver.close()
